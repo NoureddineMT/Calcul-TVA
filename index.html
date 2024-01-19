@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Calcul de TVA en Javascript</title>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="conteneur">
+      <div class="calcul-salaire-brut-net" id="tva">
+        <div class="lead">Calculer une TVA</div>
+        <div class="calculatrice-tva">
+          <form method="post" action="">
+            <table class="cellpadding5 pourcent100">
+              <thead>
+                <tr class="bordureBasGrise">
+                  <th>Montant Hors Taxes</th>
+                  <th>&nbsp;</th>
+                  <th>Montant TVA</th>
+                  <th>&nbsp;</th>
+                  <th>Montant TTC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bordureBasGrise">
+                  <th>
+                    <div class="saisie">
+                      <input type="tel" name="montantHT" id="montantHT" title="Saisir le montant Hors Taxes à calculer"
+                        value="0 €" class="chiffre input-calcul" />
+                    </div>
+                  </th>
+                  <td>
+                    <span class="addition">+</span>
+                  </td>
+                  <td class="textAlignCenter">
+                    <div class="saisie">
+                      <input type="tel" name="montantTVA" id="montantTVA" title="Saisir le montant de TVA à calculer"
+                        value="0 €" class="chiffre input-calcul" />
+                    </div>
+                  </td>
+                  <td>
+                    <span class="egal">=</span>
+                  </td>
+                  <td class="textAlignCenter">
+                    <div class="saisie">
+                      <input type="tel" name="montantTTC" id="montantTTC" title="Saisir le montant TTC à calculer"
+                        value="0 €" class="chiffre input-calcul" />
+                    </div>
+                    <div id="differenceAnnuel"></div>
+                  </td>
+                </tr>
+                <tr class="bordureBasGrise">
+                  <td colspan="6">
+                    <span class="gras">Taux TVA</span><br />
+                    <div class="saisie tauxDeTva englobeCaseCadreTva" title="saisir le taux de TVA">
+                      <input type="tel" name="tauxTVA" id="tauxTVA" title="saisir le % de charge" value="20 %"
+                        class="chiffre input-calcul" />
+                    </div>
+                  </td>
+                </tr>
+                <tr class="bordureBasGrise height60">
+                  <td class="textAlignCente pourcent100" colspan="5"><br />
+                    <div class="appliqueTauxTVA tauxDeTva">
+                      <input type="button" name="appliqueTauxTVA" title="cliquer pour appliquer une TVA au taux de 20 %"
+                        value="20 %" class="input-calcul" />
+                      <input type="button" name="appliqueTauxTVA" title="cliquer pour appliquer une TVA au taux de 10 %"
+                        value="10 %" class="input-calcul" />
+                      <input type="button" name="appliqueTauxTVA"
+                        title="cliquer pour appliquer une TVA au taux de 8.5 %" value="8.5 %" class="input-calcul" />
+                      <input type="button" name="appliqueTauxTVA" title="cliquer pour appliquer une TVA au taux de 7 %"
+                        value="7 %" class="input-calcul" />
+                      <input type="button" name="appliqueTauxTVA"
+                        title="cliquer pour appliquer une TVA au taux de 5.5 %" value="5.5 %" class="input-calcul" />
+                      <input type="button" name="appliqueTauxTVA"
+                        title="cliquer pour appliquer une TVA au taux de 19.6 %" value="19.6 %" class="input-calcul" />
+                      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                        data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div id="totalTva">
+        <p class="messageIntro">Cliquez sur n'importe quel nombre pour le modifier.</p>
+      </div>
+
+
+    </div>
+  </header>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

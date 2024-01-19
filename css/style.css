@@ -1,0 +1,92 @@
+
+p{ line-height: 24px; }
+/* ul{ margin-left: 30px; } */
+header{
+background: #55a5dc;
+/* padding: 10px 0 5px 5px; */
+padding: 10px 0 23px 0;
+/* border-bottom: 2px solid #fff; */
+}
+.activeMenu  a:hover{
+background: #55a5dc;
+}
+.italic{ font-style: italic; }
+.floatRight{ float: right; }
+.floatLeft{ float: left; }
+.visible{ background: #000; color: #fff; padding: 5px; }
+.conteneur{
+max-width: 1170px;
+margin: 0 auto;
+/* border: 1px solid red; */
+}
+table, td, th{ border-collapse: collapse; text-align: center;}
+.bordureBasGrise{  border-bottom: 1px solid #dedede; }
+.bordureHautGrise{  border-top: 1px solid #dedede; }
+.lead{  padding: 7px 0 5px 0; text-align: center; font-size: 25px; margin: 20px 0 30px 0; color: #fff; letter-spacing: 2px; }
+#index h1, #index h2, #index h3, #index h4, #impots h1, #impots h2, #impots h3, #impots h4, #tva h1, #tva h2, #tva h3, #tva h4, #societe h1, #societe h2, #societe h3, #societe h4{ text-align: center; border-bottom: 1px solid #55a5dc; }
+
+.floatRight{ float: right; }
+td{ text-align: center; }
+.calcul-salaire-brut-net  td{ padding: 12px; }
+.calcul-salaire-brut-net, .calcul-societe{
+margin: 0 0 30px 0;
+}
+/* .calcul-salaire-brut-net-options{ margin-top: 40px; } */
+.calcul-salaire-brut-net-options td{ padding: 5px; }
+.no-padding{ padding: 0; }
+
+input{ background: #fff; color: #000; }
+.input-calcul, .input-calcul2{
+letter-spacing: 2px;
+text-align: center;
+font-size: 14px;
+padding: 3px 3px 3px 20px;
+width: 75%;
+/* border: 0; */
+border-radius: 5px;
+border: 1px solid #ccc;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.input-calcul:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px #fff inset, 0 0 8px #fff;
+    outline: 0 none;
+}
+#saisie-taux{ width: 70%; min-width: 110px; }
+.table { width: 100%; }
+.messageIntro{ font-size: 20px; text-align: center; margin: 50px 0 30px 0; }
+
+.texte  p, .texte  ul li{ font-family: sans-serif; color: #181818;  line-height: 30px; text-align: justify; }
+.texte  ul li{ margin-left: 20px; }
+#index ul li , #index ol li{  line-height: 30px; }
+
+.textePartage{
+float: left;
+line-height: 39px;
+margin-right: 3%;
+}
+label{
+display: inline-block;
+margin-bottom: 5px;
+}
+
+.verticalAlignMiddle{ vertical-align:middle; }
+.textAlignCenter{ text-align: center; }
+.textAlignLeft{ text-align: left; }
+.cellpadding5{ padding: 5; }
+.pourcent18{ width: 18%; }
+.pourcent20{ width: 20%; }
+.pourcent40{ width: 40%; }
+.pourcent10{ width: 10%; }
+.width324{ width: 324px; }
+.width288{ width: 288px; }
+.height60{ height: 60px; }
+.pourcent100{ width: 100% !important; }
+
+
+#tva .appliqueTauxTVA input{ width: 15%;  border: 0; border-radius: 5px; }
+#tva .appliqueTauxTVA input:hover{ cursor: pointer; background: #303030; color: #fff; }
+#tva .calculatrice-tva{  border-radius: 10px;  }
+#tva span.addition, #tva span.egal { font-size: 30px; }
+#tauxTVA{ max-width: 20%;}
